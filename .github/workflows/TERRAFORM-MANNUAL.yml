@@ -38,9 +38,9 @@ jobs:
         id: plan
         run: terraform plan -no-color
 
-      - name: Terraform Apply
+      # - name: Terraform Apply
         
-        run: terraform apply -auto-approve
+      #   run: terraform apply -auto-approve
       
       - name: Terraform destroy
         run: terraform destroy -auto-approve    
