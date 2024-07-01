@@ -5,7 +5,7 @@ resource "aws_instance" "AshwaniStrapiEC2" {
 
   subnet_id                   = aws_subnet.subnet1.id
 
-  key_name                    = "key"
+  key_name                    = "Mum-key"
   associate_public_ip_address = true
   user_data = file("user_data_strapi.sh")         
   
