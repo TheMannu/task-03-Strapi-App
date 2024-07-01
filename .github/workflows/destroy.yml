@@ -1,7 +1,13 @@
 name: Destroy
 
 on:
-  workflow_dispatch: # This allows the workflow to be triggered manually
+  workflow_run:
+    workflows: ["CD"]
+    types:
+      - completed
+
+# on:
+#   workflow_dispatch: # This allows the workflow to be triggered manually
 
 jobs:
   terraform:
